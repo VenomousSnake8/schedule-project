@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронное расписание</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/pngwing.com.png">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="assets/pngwing.com.png"></a>
+        <div class="header_title">Электронное расписание<br>для студентов высшего учебного заведения</div>
+        <div class="burger" id="burger_container">
+            <svg width="41" height="30" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg" id="burger">
+                <rect width="41" height="8" rx="3" fill="#D9D9D9"/>
+                <rect y="11" width="41" height="8" rx="3" fill="#D9D9D9"/>
+                <rect y="22" width="41" height="8" rx="3" fill="#D9D9D9"/>
+            </svg>
+        </div>
+        <div class="menu" id="menu_container"><a href="auth.php">Вход для администратора</a></div>
+    </header>
+    <main>
+        <div class="main_image">
+            <img src="assets/Group 1 (3).png" id="main_svg">
+            <div class="welcome_text_container">
+                <p class="welcome_text">Добро пожаловать в электронное расписание студентов!</p><br>
+                <p>Мы создали эту информационную систему, чтобы сделать вашу учебную жизнь более удобной и организованной. Здесь вы найдёте актуальное расписание всех занятий, мероприятий и экзаменов, а также сможете легко планировать своё учебное время. Мы стремимся обеспечить вас всей необходимой информацией в удобном и доступном формате. Приятного использования нашей системы, и пусть каждый ваш день будет запланирован и продуктивен!</p>
+            </div>
+        </div>
+        <form>
+            Выберите группу:&nbsp;
+            <select>
+                <option>23ИСПс-1</option>
+                <option>23ИСПс-2</option>
+            </select><br>
+            <input type="submit" value="Выбрать">
+        </form>
+    </main>
+    <table>
+        <tr>
+            <td></td>
+            <td>Понедельник</td>
+            <td>Вторник</td>
+            <td>Среда</td>
+            <td>Четверг</td>
+            <td>Пятница</td>
+        </tr>
+        <tr>
+            <td>1 урок<br>(8.30 &ndash; 9.15)</td>
+            <td>Разговоры о важном</td>
+            <td>Экология отрасли</td>
+            <td></td>
+            <td>Проектирование и дизайн информационных систем</td>
+            <td>Численные методы</td>
+        </tr>
+        <tr>
+            <td>2 урок<br>(9.25 &ndash; 10.10)</td>
+            <td>Правовое обеспечение профессиональной деятельности</td>
+            <td>Экология отрасли</td>
+            <td></td>
+            <td>Проектирование и дизайн информационных систем</td>
+            <td>Численные методы</td>
+        </tr>
+        <tr>
+            <td>3 урок<br>(10.20 &ndash; 11.05)</td>
+            <td>Правовое обеспечение профессиональной деятельности</td>
+            <td>Иностранный язык в профессиональной деятельности</td>
+            <td>Проектирование и дизайн информационных систем</td>
+            <td>Численные методы</td>
+            <td>Проектирование и разработка веб-приложений</td>
+        </tr>
+        <tr>
+            <td>4 урок<br>(11.25 &ndash; 12.10)</td>
+            <td>Иностранный язык в профессиональной деятельности</td>
+            <td>Иностранный язык в профессиональной деятельности</td>
+            <td>Проектирование и дизайн информационных систем</td>
+            <td>Численные методы</td>
+            <td>Проектирование и разработка веб-приложений</td>
+        </tr>
+        <tr>
+            <td>5 урок<br>(12.30 &ndash; 13.15)</td>
+            <td>Иностранный язык в профессиональной деятельности</td>
+            <td>Разработка кода информационных систем</td>
+            <td>Правовое обеспечение профессиональной деятельности</td>
+            <td>Основы информационной безопасности</td>
+            <td>Компьютерные сети</td>
+        </tr>
+        <tr>
+            <td>6 урок<br>(13.35 &ndash; 14.20)</td>
+            <td>Компьютерные сети</td>
+            <td>Разработка кода информационных систем</td>
+            <td>Правовое обеспечение профессиональной деятельности</td>
+            <td>Основы информационной безопасности</td>
+            <td>Компьютерные сети</td>
+        </tr>
+        <tr>
+            <td>7 урок<br>(14.40 &ndash; 15.25)</td>
+            <td>Физическая культура</td>
+            <td></td>
+            <td>Безопасность жизнедеятельности</td>
+            <td>Экология отрасли</td>
+            <td>Основы проектирования баз данных</td>
+        </tr>
+        <tr>
+            <td>8 урок<br>(15.35 &ndash; 16.20)</td>
+            <td>Основы информационной безопасности</td>
+            <td></td>
+            <td>Тестирование информационных систем</td>
+            <td>Экология отрасли</td>
+            <td>Основы проектирования баз данных</td>
+        </tr>
+    </table>
+    <footer>&copy; Venomous Snake 2024</footer>
+    <script src="script/script.js"></script>
+</body>
+</html>

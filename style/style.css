@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2% 3%;
+}
+
+header, footer {
+    background-color: #42AAFF;
+}
+
+footer {
+    margin-top: 15px;
+    font-family: "Brygada 1918", serif;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header img {
+    width: 100px;
+}
+
+.header_title {
+    font-family: "Brygada 1918", serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+#main_svg {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.main_image {
+    position: relative;
+}
+
+.welcome_text_container {
+    font-family: "Brygada 1918", serif;
+    font-weight: 700;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 1.5vw;
+    color: white;
+    position: absolute;
+    top: 13%;
+    left: 10%;
+    z-index: 2;
+}
+
+#burger {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#burger_container {
+    transition: 0.3s ease-in-out;
+}
+
+.menu {
+    position: absolute;
+    right: 23px;
+    top: 100px;
+    width: 270px;
+    text-align: center;
+    background-color: rgba(175, 175, 175, 0.6);
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    font-family: "Brygada 1918", serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.menu a:hover {
+    background-color: rgb(175, 175, 175);
+}
+
+.beautiful_table {
+    border: 0.5px beige solid;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Brygada 1918", serif;
+    border-collapse: collapse;
+}
+
+.beautiful_table tr td:first-child {
+    width: 150px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.beautiful_table tr:first-child td:nth-child(odd) {
+    background-color: rgb(113, 191, 255);
+}
+
+.beautiful_table tr:first-child td:nth-child(even) {
+    background-color: rgb(0, 255, 255);
+}
+
+.beautiful_table tr:not(:first-child) td {
+    background-color: rgb(245, 245, 245);
+    height: 60px;
+}
+
+.beautiful_table tr:hover td {
+    background-color: beige;
+}
+
+form, input[type="submit"], select {
+    font-family: "Brygada 1918", serif;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+select {
+    font-size: 20px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0.5px 1px 0 1px rgba(0, 0, 0, 0.2);
+    transition: 0.1s ease-in-out;
+    background: linear-gradient(white, #E5E5E5);
+    border: 1px lightblue solid;
+    cursor: pointer;
+}
+
+select:focus {
+    box-shadow: 0 0 1px 1.3px rgba(59, 153, 252, 0.7);
+    outline: none;
+}
+
+select:hover {
+    border: 1px rgba(0, 0, 0, 0.5) solid;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    width: 130px;
+    height: 40px;
+    font-size: 24px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px lightblue solid;
+    background: linear-gradient(white, #E5E5E5);
+    box-shadow: 0.5px 1px 0 1px rgba(0, 0, 0, 0.2);
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+input[type="submit"]:focus {
+    box-shadow: 0 0 1px 2px rgba(59, 153, 252, 0.7);
+}
+
+input[type="submit"]:hover {
+    border: 1px rgba(0, 0, 0, 0.5) solid;
+}
+
+.auth {
+    padding-top: 13%;
+    text-align: center;
+    font-family: "Brygada 1918", serif;
+    font-size: 32px;
+}
+
+.auth input[type="text"], .auth input[type="password"], .reg input[type="text"], .reg input[type="password"], .reg input[type="email"] {
+    border-radius: 20px;
+    font-family: "Brygada 1918", serif;
+    width: 300px;
+    height: 50px;
+    border: 1px lightblue solid;
+    outline: none;
+    font-size: 24px;
+    padding-left: 15px;
+    box-shadow: 0.5px 1px 0 1px rgba(0, 0, 0, 0.2);
+    transition: 0.1s ease-in-out;
+}
+
+.auth input[type="text"]:hover, .auth input[type="password"]:hover, .auth input[type="text"]:focus, .auth input[type="password"]:focus, .reg input[type="text"]:hover, .reg input[type="password"]:hover, .reg input[type="email"]:hover, .reg input[type="text"]:focus, .reg input[type="password"]:focus, .reg input[type="email"]:focus {
+    box-shadow: 1px 2px 0 1.5px rgba(0, 0, 0, 0.2);
+}
+
+.auth input[type="password"] {
+    margin-top: 20px;
+}
+
+#auth_button {
+    width: 200px;
+    margin-top: 20px;
+}
+
+#auth_image {
+    object-fit: cover;
+    float: left;
+    min-height: 100vh;
+    width: 40%;
+    max-width: 700px;
+}
+
+.error-message {
+    color: red;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+#reg_image {
+    object-fit: cover;
+    float: right;
+    min-height: 100vh;
+    width: 40%;
+    max-width: 700px;
+}
+
+.reg {
+    text-align: center;
+    padding-top: 3%;
+}
+
+h1 {
+    font-family: "Brygada 1918", serif;
+}
+
+.reg input:not(:first-child) {
+    margin-top: 20px;
+}
+
+#reg_button {
+    width: 230px;
+}
+
+#chief_admin {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+#chief_admin + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+#chief_admin + label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px #ADB5BD solid;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+#chief_admin:checked + label::before {
+    border-color: #42AAFF;
+    background-color: #42AAFF;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили при наведении курсора на checkbox */
+#chief_admin:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #B3D7FF;
+}
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+#chief_admin:not(:disabled):active + label::before {
+    background-color: #B3D7FF;
+    border-color: #B3D7FF;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+#chief_admin:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+#chief_admin:focus:not(:checked) + label::before {
+    border-color: #80BDFF;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+#chief_admin:disabled + label::before {
+    background-color: #E9ECEF;
+}
+
+.specific_body::-webkit-scrollbar {
+    width: 0;
+}
+
+.success {
+    font-family: "Brygada 1918", serif;
+    font-size: 28px;
+    color: green;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.warning {
+    font-family: "Brygada 1918", serif;
+    font-size: 28px;
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.editable_lesson {
+    outline: none;
+    width: 80%;
+    height: 50px;
+    background: transparent;
+    text-align: center;
+    border: none;
+    font-family: "Brygada 1918", serif;
+    resize: none;
+    line-height: 1.5;
+}
+
+.pers {
+    border-radius: 20px;
+    font-family: "Brygada 1918", serif;
+    width: 400px;
+    height: 50px;
+    border: 1px lightblue solid;
+    outline: none;
+    font-size: 24px;
+    padding-left: 15px;
+    box-shadow: 0.5px 1px 0 1px rgba(0, 0, 0, 0.2);
+    transition: 0.1s ease-in-out;
+}
+
+.pers:hover, .pers:focus {
+    box-shadow: 1px 2px 0 1.5px rgba(0, 0, 0, 0.2);
+}
+
+.pa {
+    margin: 0 auto;
+    margin-top: 20px;
+    border-spacing: 20px;
+}
+
+.pa tr td:first-child {
+    text-align: right;
+}
+
+.pa tr:last-child td {
+    text-align: center;
+}
+
+.pa tr td:last-child {
+    padding-left: 15px;
+}
